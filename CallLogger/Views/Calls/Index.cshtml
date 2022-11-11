@@ -1,0 +1,32 @@
+﻿@model List<CallLogger.Models.Domain.CallLog>
+
+
+
+<h1>Call Log</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Time of Call</th>
+            <th>Name of Caller</th>
+            <th>Phone Number</th>
+            <th>Intended Recipient</th>
+            <th>Message</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach( var call in Model)
+        {
+            <tr>
+                <td>@call.Id</td>
+                <td>@call.TimeOfCall</td>
+                <td>@call.NameOfCaller</td>
+                <td>@call.CallerPhoneNumber)</td>
+                <td>@call.IntendedRecipient</td>
+                <td>@call.MessageForRecipient</td>
+                <td><a href="Call/View/@call.Id">View</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
