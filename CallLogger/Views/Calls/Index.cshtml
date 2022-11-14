@@ -1,9 +1,9 @@
 ﻿@model List<CallLogger.Models.Domain.CallLog>
 
-
+<body class="callindex">
 
 <h1>Call Log</h1>
-<table>
+<table class="table">
     <thead>
         <tr>
             <th>Id</th>
@@ -22,11 +22,12 @@
                 <td>@call.Id</td>
                 <td>@call.TimeOfCall</td>
                 <td>@call.NameOfCaller</td>
-                <td>@call.CallerPhoneNumber)</td>
+                <td>@call.CallerPhoneNumber</td>
                 <td>@call.IntendedRecipient</td>
                 <td>@call.MessageForRecipient</td>
-                <td><a href="Call/View/@call.Id">View</a></td>
+                <td><a href="Calls/View/@call.Id">View</a></td>
             </tr>
         }
     </tbody>
 </table>
+</body>

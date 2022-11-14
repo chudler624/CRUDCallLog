@@ -24,11 +24,11 @@ namespace CallLogger.Migrations
 
             modelBuilder.Entity("CallLogger.Models.Domain.CallLog", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("Guid");
+                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<Guid>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CallerPhoneNumber")
                         .IsRequired()

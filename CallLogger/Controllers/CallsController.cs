@@ -32,8 +32,7 @@ namespace CallLogger.Controllers
         public async Task<IActionResult> Add(AddToCallLogModel addToCallLog)
         {
             var callLog = new CallLog()
-            {
-                Id = Guid.NewGuid(),
+            {                
                 TimeOfCall = addToCallLog.TimeOfCall,
                 NameOfCaller = addToCallLog.NameOfCaller,
                 CallerPhoneNumber = addToCallLog.CallerPhoneNumber,
@@ -47,7 +46,7 @@ namespace CallLogger.Controllers
         }
 
         [HttpGet]
-        public async Task <IActionResult> View(Guid Id)
+        public async Task <IActionResult> View(int Id)
         {
             var callLog = await callLogDbContext.CallLogger.FirstOrDefaultAsync(x => x.Id == Id);
 

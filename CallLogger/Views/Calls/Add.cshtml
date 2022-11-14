@@ -1,27 +1,31 @@
 ﻿@model AddToCallLogModel
 
-<h1>Add Call </h1>
+<body class="addpage">
+
+<h1>Add Call</h1>
 <form method="post" action="Add" class="mt-5">
   <div class="mb-3">
-    <label for="" class="form-label">Time Of Call</label>
+    <label id="rounded" for="" class="form-label">Time Of Call</label>
     <input type="datetime" class="form-control" asp-for="TimeOfCall">
    </div>
    <div class="mb-3">
-    <label for="" class="form-label">Name of Caller</label>
+    <label id="rounded" for="" class="form-label">Name of Caller</label>
     <input type="text" class="form-control" asp-for="NameOfCaller">
    </div>
    <div class="mb-3">
-    <label for="" class="form-label">Phone Number</label>
+    <label id="rounded" for="" class="form-label">Phone Number</label>
     <input type="number" class="form-control" asp-for="CallerPhoneNumber">
    </div>
    <div class="mb-3">
-    <label for="" class="form-label">Message For</label>
+    <label id="rounded" for="" class="form-label">Message For</label>
     <input type="text" class="form-control" asp-for="IntendedRecipient">
    </div>
    <div class="mb-3">
-    <label for="" class="form-label">Message</label>
+    <label id="rounded" for="" class="form-label">Message</label>
     <input type="text" class="form-control" asp-for="MessageForRecipient">
    </div>
   
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+    </body>

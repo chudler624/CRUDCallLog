@@ -16,3 +16,56 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+title{
+    margin: 0px 10px 0px 0px
+}
+
+.nav-item{
+    margin: 0px 10px 0px 10px;
+}
+
+h1{
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*Home Page*/
+.homepage {
+    background-color: lightblue;
+}
+
+.homepic{
+    text-align:center;
+    position:center;
+    margin: 10px 10px 10px 10px;
+}
+
+.homebutton{
+    text-align:center;
+    margin: 40px 40px 40px 40px;
+}
+
+/*Add Page*/
+.addpage {
+    background-color: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/*Call Index*/
+.callindex {
+    background-color: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.table {
+    width: auto;
+    width: 95%;
+    /*text-align:center;*/
+}
+/*nav bar*/
+.container-fluid {
+    font-weight: 700
+}
+

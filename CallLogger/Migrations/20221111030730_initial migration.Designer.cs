@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CallLogger.Migrations
 {
     [DbContext(typeof(CallLogDbContext))]
-    [Migration("20221110214348_Initial Migration")]
-    partial class InitialMigration
+    [Migration("20221111030730_initial migration")]
+    partial class initialmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
